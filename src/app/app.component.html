@@ -1,0 +1,20 @@
+<hello name="{{ name }}"></hello>
+
+
+<app-view [hero]="selectedHero"></app-view>
+<input [(ngModel)]="title" placeholder="text here"/>
+<table width="100%">
+<tr>
+  <th>userId</th>
+  <th>id</th>
+  <th>title</th>
+  <th>completed</th>
+</tr>
+<tr *ngFor="let any of httpData |search:title"
+[class.selected]="any===selectedHero" (click)="onSelect(any)">
+  <td>{{any.userId}}</td>
+  <td>{{any.id}}</td>
+  <td>{{any.title}}</td>
+  <td>{{any.completed}}</td>
+</tr>
+</table>

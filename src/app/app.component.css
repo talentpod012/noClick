@@ -1,0 +1,13 @@
+table,th,td{
+  margin: auto;
+  border: solid 1px green;
+  padding: 2px 4px;
+  font: 15px bold;
+}
+th{
+  font-weight: bold;
+}
+.selected {
+  background-color: #CFD8DC !important;
+  color: black;
+}
